@@ -47,7 +47,7 @@ const onUpdateActiveLink  = (value) => {
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/lamis-t-394795287/" ><img src={navIcon1} alt="" /></a>
                  <a href="https://www.facebook.com/lamis.tashkeel.3" ><img src={navIcon2} alt="" /></a>
-                    <a href="https://www.instagram.com/lamistashkeel/" ><img src={navIcon3} alt="" /></a>
+                    <a href="#" ><img src={navIcon3} alt="" /></a>
             </div>
             <button className="vvd" onClick={() => window.open('https://www.linkedin.com/in/lamis-t-394795287/', '_blank')}>
   <span>Let's Connect</span>
