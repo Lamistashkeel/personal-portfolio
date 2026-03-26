@@ -20,8 +20,8 @@ export const Projects = () => {
       githubUrl: "https://github.com/Lamistashkeel/Amazon-clone",
     },
     {
-      title: "Weather-App",
-      description: "Design & Development",
+      title: "AI Customer Support SaaS",
+      description: "(Smart Chatbot + Ticket Automation)",
       imgUrl: projImg2,
     },
     {
@@ -33,16 +33,19 @@ export const Projects = () => {
       title: "Climate-data-analysis",
       description: "Data analysis and visualization",
       imgUrl: projImg4,
+       
     },
     {
       title: "solar-power-generation-analysis",
       description: "Data analysis and visualization",
       imgUrl: projImg5,
+       
     },
     {
       title: " Zameen.com Real Estate Data Analysis",
       description: "Data analysis and visualization",
       imgUrl: projImg6,
+   
     },
   ];
 
@@ -88,7 +91,7 @@ In data analysis and visualization, I’ve worked on exploratory data analysis (
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+     
     </section>
   )
 }
