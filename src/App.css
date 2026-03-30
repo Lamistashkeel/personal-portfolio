@@ -38,22 +38,13 @@ body {
   font-family: 'Centra', sans-serif !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
 }
 
-p,
-a,
-li,
-button,
-ul {
+p, a, li, button, ul {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -74,26 +65,20 @@ button {
   background-color: transparent;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
+input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
+@media (min-width: 1700px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
   }
 }
 
-p.success {
-  color: green;
-}
+p.success { color: green; }
+p.danger  { color: red; }
 
-p.danger {
-  color: red;
-}
 
 /************ Navbar Css ************/
 
@@ -339,23 +324,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-
-  50% {
-    transform: translateY(20px);
-  }
-
-  100% {
-    transform: translateY(-20px);
-  }
+  0%   { transform: translateY(-20px); }
+  50%  { transform: translateY(20px);  }
+  100% { transform: translateY(-20px); }
 }
 
-.txt-rotate>.wrap {
+.txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
-
 
 
 /************ Skills Css ************/
@@ -364,6 +340,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-image: url('./assets/img/color-sharp.png');
 }
+
 .skill-bx {
   background: #151515;
   border-radius: 64px;
@@ -371,26 +348,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: -60px;
 }
+
 .skill h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
 }
+
 .skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
 }
+
 .skill-slider {
   width: 80%;
   margin: 0 auto;
   position: relative;
 }
+
 .skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
 }
+
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -400,11 +382,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-
-
 /************ Projects Css ************/
-
-
 .project {
   padding: 80px 0;
   position: relative;
@@ -464,7 +442,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
-
 }
 
 .project .nav.nav-pills .nav-link.active::before {
@@ -484,13 +461,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
+
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
 }
-
 
 .proj-imgbx::before {
   content: "";
@@ -546,23 +523,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project .row {
-  --bs-gutter-x: 1rem; /* tighten column gaps */
+  --bs-gutter-x: 1rem;
 }
+
 
 /************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
 }
+
 .contact img {
   width: 92%;
 }
+
 .contact h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
   margin-bottom: 30px;
 }
-.contact form input, .contact form textarea {
+
+.contact form input,
+.contact form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -575,19 +557,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
-.contact form input:focus, .contact form textarea:focus {
+
+.contact form input:focus,
+.contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
 }
-.contact form input::placeholder, .contact form textarea::placeholder {
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
 }
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder {
   color: #121212;
   opacity: 0.8;
 }
+
 .contact form button {
   font-weight: 700;
   color: #000;
@@ -599,13 +588,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   transition: 0.3s ease-in-out;
 }
+
 .contact form button span {
   z-index: 1;
   position: relative;
 }
+
 .contact form button:hover {
   color: #fff;
 }
+
 .contact form button::before {
   content: "";
   background: #121212;
@@ -617,6 +609,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 0;
   transition: 0.3s ease-in-out;
 }
+
 .contact form button:hover::before {
   width: 100%;
 }
@@ -630,6 +623,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .newsletter-bx {
   background: #FFFFFF;
   border-radius: 55px;
@@ -638,11 +632,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 80px;
   margin-top: -122px;
 }
+
 .newsletter-bx h3 {
   font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1.2em;
 }
+
 .new-email-bx {
   background: #fff;
   padding: 5px;
@@ -652,6 +648,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
+
 .new-email-bx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -663,6 +660,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: -1px;
   right: -1px;
 }
+
 .new-email-bx::after {
   content: "";
   background: #fff;
@@ -674,6 +672,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   right: 0;
 }
+
 .new-email-bx input {
   width: 100%;
   color: #121212;
@@ -682,6 +681,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 0;
   padding: 0 15px;
 }
+
 .new-email-bx button {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 20px 65px;
@@ -690,13 +690,314 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
+
 .footer img {
   width: 26%;
 }
+
 .footer p {
   font-weight: 400;
   font-size: 14px;
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+
+/********************************************
+ * RESPONSIVE — Tablets & small laptops
+ * (≤ 991px / Bootstrap "md" breakpoint)
+ ********************************************/
+@media (max-width: 991px) {
+
+  /* ── Navbar ── */
+  nav.navbar a.navbar-brand { width: 20%; }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  span.navbar-text {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .navbar-text button {
+    padding: 12px 22px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  /* ── Banner ── */
+  .banner {
+    padding: 180px 0 80px 0;
+  }
+
+  .banner h1 {
+    font-size: 50px;
+  }
+
+  /* ── Skills ── */
+  .skill-bx {
+    padding: 50px 30px;
+    border-radius: 40px;
+    margin-top: -40px;
+  }
+
+  .skill h2 { font-size: 38px; }
+
+  .skill-slider { width: 90%; }
+
+  /* ── Projects ── */
+  .project h2 { font-size: 38px; }
+
+  .project p { width: 80%; }
+
+  .project .nav.nav-pills { width: 85%; }
+
+  /* ── Contact ── */
+  .contact { padding: 60px 0 120px 0; }
+
+  .contact h2 { font-size: 38px; }
+
+  /* ── Footer ── */
+  .newsletter-bx {
+    padding: 60px 60px;
+    margin-top: -80px;
+  }
+
+  .footer img { width: 35%; }
+}
+
+
+/********************************************
+ * RESPONSIVE — Mobile
+ * (≤ 767px / Bootstrap "sm" breakpoint)
+ ********************************************/
+@media (max-width: 767px) {
+
+  /* ── Navbar ── */
+  nav.navbar {
+    padding: 12px 0;
+    background-color: #121212;
+  }
+
+  nav.navbar a.navbar-brand { width: 35%; }
+
+  nav.navbar .navbar-collapse {
+    background-color: #121212;
+    padding: 10px 15px 20px;
+    border-radius: 0 0 16px 16px;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  span.navbar-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0 0 0;
+  }
+
+  .social-icon { margin-left: 0; }
+
+  .navbar-text button {
+    margin-left: 0;
+    padding: 10px 20px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ── Banner ── */
+  .banner {
+    padding: 130px 0 60px 0;
+    text-align: center;
+  }
+
+  .banner .tagline {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+    letter-spacing: 0.4px;
+  }
+
+  .banner p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .banner button {
+    font-size: 16px;
+    margin-top: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* ── Skills ── */
+  .skill { padding: 0 0 40px 0; }
+
+  .skill-bx {
+    padding: 40px 20px;
+    border-radius: 30px;
+    margin-top: -30px;
+  }
+
+  .skill h2 { font-size: 30px; }
+
+  .skill p {
+    font-size: 15px;
+    margin: 10px 0 40px 0;
+  }
+
+  .skill-slider { width: 100%; }
+
+  .skill-slider .item img { width: 40%; }
+
+  .background-image-left { display: none; }
+
+  /* ── Projects ── */
+  .project { padding: 60px 0; }
+
+  .project h2 { font-size: 30px; }
+
+  .project p {
+    font-size: 15px;
+    width: 95%;
+    margin: 10px auto 20px auto;
+  }
+
+  .project .nav.nav-pills { width: 95%; }
+
+  .project .nav.nav-pills .nav-link {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  .proj-txtx h4 { font-size: 20px; }
+
+  .background-image-right { display: none; }
+
+  /* ── Contact ── */
+  .contact { padding: 50px 0 80px 0; }
+
+  .contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .contact img {
+    width: 70%;
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    padding: 14px 18px;
+    font-size: 15px;
+    border-radius: 14px;
+  }
+
+  .contact form button {
+    padding: 12px 36px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  /* ── Footer ── */
+  .footer { padding: 0 0 30px 0; }
+
+  .newsletter-bx {
+    padding: 40px 24px;
+    border-radius: 30px;
+    margin-top: -60px;
+    margin-bottom: 50px;
+  }
+
+  .newsletter-bx h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .new-email-bx {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .new-email-bx input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .new-email-bx button {
+    padding: 12px 30px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .footer img {
+    width: 45%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .footer .text-center,
+  .footer .text-sm-end {
+    text-align: center !important;
+    margin-top: 16px;
+  }
+
+  .footer p { text-align: center; }
+
+  .footer .social-icon {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+/********************************************
+ * RESPONSIVE — Extra-small phones (≤ 480px)
+ ********************************************/
+@media (max-width: 480px) {
+
+  nav.navbar a.navbar-brand { width: 42%; }
+
+  .banner h1 { font-size: 30px; }
+
+  .banner .tagline { font-size: 14px; }
+
+  .banner button { font-size: 14px; }
+
+  .skill h2,
+  .project h2,
+  .contact h2 {
+    font-size: 26px;
+  }
+
+  .proj-txtx h4 { font-size: 16px; }
+
+  .proj-txtx span { font-size: 12px; }
+
+  .newsletter-bx { padding: 30px 16px; }
 }
