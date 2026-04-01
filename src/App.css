@@ -29,6 +29,13 @@ html {
   scroll-padding-top: 75px;
 }
 
+/* On mobile the navbar is shorter — match scroll offset */
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 64px;
+  }
+}
+
 body {
   font-weight: 400;
   overflow-x: hidden;
@@ -782,16 +789,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   /* ── Navbar ── */
   nav.navbar {
-    padding: 12px 0;
+    padding: 8px 0;
     background-color: #121212;
   }
 
-  nav.navbar a.navbar-brand { width: 35%; }
+  /* Cap logo height so the navbar stays slim on small phones */
+  nav.navbar a.navbar-brand {
+    width: auto;
+  }
+
+  nav.navbar a.navbar-brand img {
+    height: 48px;
+    width: auto;
+  }
 
   nav.navbar .navbar-collapse {
     background-color: #121212;
-    padding: 10px 15px 20px;
-    border-radius: 0 0 16px 16px;
+    padding: 8px 15px 16px;
+    border-radius: 0 0 14px 14px;
   }
 
   nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -803,23 +818,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   span.navbar-text {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
-    padding: 12px 0 0 0;
+    gap: 10px;
+    padding: 10px 0 0 0;
   }
 
   .social-icon { margin-left: 0; }
 
+  /* Slim "Let's Connect" button — thin border, tight padding */
   .navbar-text button {
     margin-left: 0;
-    padding: 10px 20px;
-    font-size: 15px;
+    padding: 8px 18px;
+    font-size: 14px;
+    border-width: 1px;
     width: 100%;
     text-align: center;
   }
 
   /* ── Banner ── */
+  /* Navbar height on mobile = logo 48px + padding 16px = ~64px.
+     90px gives comfortable breathing room so heading is never clipped. */
   .banner {
-    padding: 130px 0 60px 0;
+    padding: 90px 0 60px 0;
     text-align: center;
   }
 
@@ -1000,4 +1019,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .proj-txtx span { font-size: 12px; }
 
   .newsletter-bx { padding: 30px 16px; }
+}
+
+/* ── Pixel 7 / very small phones extra tweaks ── */
+@media (max-width: 430px) {
+  .banner {
+    padding: 160px 0 50px 0;
+  }
+
+  /* thinner "Let's Connect" button */
+  .navbar-text button {
+    padding: 7px 16px;
+    font-size: 14px;
+    border-width: 1px;
+  }
 }
