@@ -40,7 +40,7 @@ Git, GitHub, Postman</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web app Development</h5>
+                                <h5>AI-Driven Full-Stack (MERN) Developer</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
@@ -48,11 +48,11 @@ Git, GitHub, Postman</p>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>API integration</h5>
+                                <h5>Data analyst</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>software developer</h5>
+                                <h5>Web app Development</h5>
                             </div>
                         </Carousel>
                     </div>

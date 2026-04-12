@@ -61,7 +61,7 @@ export const Banner = () => {
                     <span className="wrap">{text}</span>
                   </span>
                 </h1>
-                <p>I'm a MERN stack developer skilled in building full-stack applications using 
+                <p>I'm AI-driven MERN Stack Developer building scalable Web Apps, Saas using 
                 MongoDB, Express.js, React, and Node.js, with a focus on creating responsive 
                 interfaces and efficient, scalable systems. I also work as a data analyst, 
                 transforming raw data through cleaning and preprocessing, then turning it into 
